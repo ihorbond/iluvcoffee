@@ -2,8 +2,8 @@ import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { HttpExceptionFilter } from './common/filters/http-exception/http-exception.filter';
-import { TimeoutInterceptor } from './common/intterceptor/timeout/timeout.interceptor';
-import { WrapResponseInterceptor } from './common/intterceptor/wrap-response/wrap-response.interceptor';
+import { TimeoutInterceptor } from './common/interceptor/timeout/timeout.interceptor';
+import { WrapResponseInterceptor } from './common/interceptor/wrap-response/wrap-response.interceptor';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
